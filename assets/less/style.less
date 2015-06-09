@@ -1,3 +1,5 @@
+/* Importing */
+
 // Bootstrap
 @import 'bootstrap/bootstrap';
 
@@ -7,4 +9,19 @@
 
 a {
     color: red;
+}
+
+/* variables */
+@heading-color: rgb(99, 200, 200);
+h1{
+	color: @heading-color;
+	font-weight: 300;
+}
+
+/* Mixins */
+.big-button{
+	.btn;
+	.btn-success;
+	.btn-lg;
+	.btn-block;
 }
